@@ -25,7 +25,11 @@ body {
 /*    position: absolute;*/
     bottom: 12px;
     left: 65px;
-    font-size: xx-large;
+    font-size: large;
+}
+
+a.navbar-brand {
+    color: white;
 }
 
 #page-wrapper {
