@@ -1,13 +1,18 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 module WebPage.Generate.Rules where
+import System.FilePath
 import Hakyll
+
+import WebPage.Generate.Context
 
 compileRules :: Rules ()
 compileRules = do
   compileTemplates
   compileMarkdown
   compileCss
+  compileImage
+  buildPages
 
 compileTemplates :: Rules ()
 compileTemplates =
@@ -22,3 +27,23 @@ compileCss =
     match "css/*" $ do
       route idRoute
       compile copyFileCompiler
+
+compileImage :: Rules ()
+compileImage =
+    match "images/*" $ do
+      route idRoute
+      compile copyFileCompiler
+
+buildPages :: Rules ()
+buildPages = do
+    match "pages/*" $ do
+      route (customRoute (flip addExtension "html" . takeBaseName . toFilePath))
+      compilePage mainTemplate
+
+compilePage :: TemplateApplication -> Rules ()
+compilePage apply = compile $ do
+    path <- fmap toFilePath getUnderlying
+    let content = case takeExtension path of
+                    ".html" -> getResourceBody
+                    _       -> error ("Unexpected file type: " ++ path)
+    content >>= apply (takeBaseName path)
