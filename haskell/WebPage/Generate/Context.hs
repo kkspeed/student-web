@@ -68,17 +68,21 @@ pubFields p = constField (_key p) (pubStr p)
 
 getPubContext :: Compiler (Context String)
 getPubContext = do
+  isindex <- fmap (== "pages/index.html") getUnderlying
   pdfs <- loadAll "papers/*.pdf"
   txts <- loadAll "papers/*.abstract.md"
   let pubs = map (addAbstract txts . linkPdf pdfs) allPubs
   let pubListContext =
           pubListField "pubs"     pubs
-          <> pubListField "journals" (ofKind Journal pubs)
-          <> pubListField "chapters" (ofKind Chapter pubs)
-          <> pubListField "theses"   (ofKind Thesis pubs)
-          <> pubListField "conferences" (ofKinds [Conference,Workshop, Poster] pubs)
-          <> pubListField "others" (ofKind Other pubs)
+          <> pubListField "journals" (shortenIf isindex $ ofKind Journal pubs)
+          <> pubListField "chapters" (shortenIf isindex $ ofKind Chapter pubs)
+          <> pubListField "theses"   (shortenIf isindex $ ofKind Thesis pubs)
+          <> pubListField "conferences" (shortenIf isindex
+                                         $ ofKinds [Conference,Workshop, Poster] pubs)
+          <> pubListField "others" (shortenIf isindex $ ofKind Other pubs)
   return $ foldr (<>) pubListContext (map pubFields pubs)
+    where shortenIf p = if p then take pubLength else id
+          pubLength = 3
 
 baseContext :: Context String
 baseContext = defaultContext

@@ -48,27 +48,7 @@ since:      2013 Fall
 </div>
 
 <div class="container">
-  <h3>Publications</h3>
-  <h4 class="pub-head">Journal Articles</h4>
-  <ol class="pub-list">
-    $for(journals)$
-    <li class="pub-item">$body$</li>
-    $endfor$
-  </ol>
-
-  <h4 class="pub-head">Conference Papers</h4>
-  <ol class="pub-list">
-    $for(conferences)$
-    <li class="pub-item">$body$</li>
-    $endfor$
-  </ol>
-
-  <h4 class="pub-head">Others</h4>
-  <ol class="pub-list">
-    $for(others)$
-    <li class="pub-item">$body$</li>
-    $endfor$
-  </ol>
+  $partial("templates/publications.html")$
 </div>
 
 <div class="container">

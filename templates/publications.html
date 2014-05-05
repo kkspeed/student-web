@@ -1,0 +1,35 @@
+<h3>Publications (<a href="/publications.html">Full list</a>)</h3>
+
+
+<h4 class="pub-head">Journal Articles</h4>
+
+<ol class="pub-list">
+$for(journals)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+
+<h4 class="pub-head">Conference Papers</h4>
+
+<ol class="pub-list">
+$for(conferences)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+
+<h4 class="pub-head">Others</h4>
+<ol class="pub-list">
+  $for(others)$
+  <li class="pub-item">$body$</li>
+  $endfor$
+</ol>
+
+$if(thesis)$
+<h4 class="pub-head">Theses and Other Papers</h4>
+
+<ol class="pub-list">
+$for(theses)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+$endif$
