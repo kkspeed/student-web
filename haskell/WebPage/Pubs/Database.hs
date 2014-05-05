@@ -34,7 +34,7 @@ ub   = "University at Buffalo"
 
 -- ** Journals
 tetc   = short "TETC" "IEEE Trans, on Emerging Topics in Computing"
-iot    = short "IOT"  "IEE, Internet of Things Journa"
+iot    = short "IOT"  "Internet of Things Journal, IEEE"
 
 -- ** Conferences
 globecom = short "Globecom" "IEEE Globe Communications Conference"
@@ -52,13 +52,14 @@ mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and N
 
 -- ** Lists of papers in chronological order.
 
-y13 = [priwhisper, infocom13, tetc13, mobicomApp13]
+y14 = [priwhishper]
+y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
-allPubs = concat [y13,y12]
+allPubs = concat [y14, y13,y12]
 
 -- ** 2013
-priwhisper  = journal "Priwhishper"
+priwhishper  = journal "binsheng-2014-priwhishper"
               [binsheng, zhanqin, sichen, muyuanli, kuiren, congwang, dima]
               "PriWhisper: Enabling Keyless Secure Acoustic Communication for Smartphones"
               2014
