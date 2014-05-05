@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     color: #fff;
 
-    background: url("/images/background.jpg");
+    background: url("../images/background.jpg");
     background-position:center;
     background-repeat:no-repeat;
     background-attachment: fixed;
