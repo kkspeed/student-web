@@ -15,12 +15,12 @@ since:      2013 Fall
 
 <div class="container">
   <div class="col-md-3">
-    <img src="/images/avatar.jpg" width="185px" height="155px"/>
+    <img src="/images/avatar.jpg" width="200px" height="155px"/>
   </div>
   <div class="col-md-8">
     <div class="container">
       <h4>Muyuan Li ($position$ since $since$ @ $univ$)</h4>
-      <p>I'm currently with $group$ group
+      <p>I'm currently with $group$ Group
         (<a href="$group-link$">link</a>), supervised by $supervisor$
         (<a href="$supervisor-link$">link</a>)</p>
     </div>
@@ -38,4 +38,40 @@ since:      2013 Fall
       </a>
     </div>
   </div>
+</div>
+
+<div class="container">
+  <h3>Research Overview</h3>
+  <div class="col-md-12">
+    $research-overview$
+  </div>
+</div>
+
+<div class="container">
+  <h3>Publications</h3>
+  <h4 class="pub-head">Journal Articles</h4>
+  <ol class="pub-list">
+    $for(journals)$
+    <li class="pub-item">$body$</li>
+    $endfor$
+  </ol>
+
+  <h4 class="pub-head">Conference Papers</h4>
+  <ol class="pub-list">
+    $for(conferences)$
+    <li class="pub-item">$body$</li>
+    $endfor$
+  </ol>
+</div>
+
+<div class="container">
+  <h3>Teaching</h3>
+
+  $teaching$
+</div>
+
+<div class="container">
+  <h3>Me on the Web</h3>
+
+  $me$
 </div>

@@ -13,6 +13,8 @@ compileRules = do
   compileCss
   compileImage
   buildPages
+  copyPapers
+  loadAbstracts
 
 compileTemplates :: Rules ()
 compileTemplates =
@@ -20,7 +22,7 @@ compileTemplates =
 
 compileMarkdown :: Rules ()
 compileMarkdown =
-    match "teaching/*.md" $ compile pandocCompiler
+    match ("blurbs/*.md" .||. "teaching/*.md") $ compile pandocCompiler
 
 compileCss :: Rules ()
 compileCss =
@@ -47,3 +49,14 @@ compilePage apply = compile $ do
                     ".html" -> getResourceBody
                     _       -> error ("Unexpected file type: " ++ path)
     content >>= apply (takeBaseName path)
+
+copyPapers :: Rules ()
+copyPapers =
+  match "papers/*.pdf" $ do
+    route   idRoute
+    compile copyFileCompiler
+
+loadAbstracts :: Rules ()
+loadAbstracts =
+  match "papers/*.abstract.md" $
+    compile pandocCompiler

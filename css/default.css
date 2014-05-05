@@ -33,9 +33,17 @@ a.navbar-brand {
 }
 
 #page-wrapper {
-    padding-top: .1em;
+    padding-top: .5em;
 }
 
 .bg-white {
     background: #fff;
+}
+
+.pub-title {
+    font-weight: bold;
+}
+
+.pub-venue-name {
+    font-style: italic;
 }

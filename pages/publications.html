@@ -1,0 +1,32 @@
+---
+title: Publications
+---
+
+<h1>Publications</h1>
+
+
+<h3 class="pub-head">Journal Articles</h3>
+
+<ol class="pub-list">
+$for(journals)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+
+<h3 class="pub-head">Conference Papers</h3>
+
+<ol class="pub-list">
+$for(conferences)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+
+$if(thesis)$
+<h3 class="pub-head">Theses and Other Papers</h3>
+
+<ol class="pub-list">
+$for(theses)$
+  <li class="pub-item">$body$</li>
+$endfor$
+</ol>
+$endif$
