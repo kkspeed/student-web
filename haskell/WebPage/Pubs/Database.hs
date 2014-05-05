@@ -58,7 +58,7 @@ y12 = [globecom12, ccs12poster]
 allPubs = concat [y13,y12]
 
 -- ** 2013
-priwhisper  = journal "Priwhisper"
+priwhisper  = journal "Priwhishper"
               [binsheng, zhanqin, sichen, muyuanli, kuiren, congwang, dima]
               "PriWhisper: Enabling Keyless Secure Acoustic Communication for Smartphones"
               2014
