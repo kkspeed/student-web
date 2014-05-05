@@ -64,7 +64,7 @@ a.navbar-brand {
     margin-top: .5em;
     border-style:solid;
     border-color:#33FF33;
-    width: 1120px;
+    width: 100%;
     border-width: 1px;
 }
 
