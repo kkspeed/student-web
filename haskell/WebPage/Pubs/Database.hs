@@ -83,6 +83,7 @@ mobicomApp13 = other "sichen2013-mobicom"
                "AcousAuth: A smartphone empowered personal authentication system exploiting keyless acoustic communication"
                2013
                `atURL` "http://vimeo.com/77708077"
+               `setCodeLink` "http://quake0day.github.io/Jigglypuff"
                `withNote` "App Competition Finalist (Top 10)"
                @@ mobicom
 -- ** 2012

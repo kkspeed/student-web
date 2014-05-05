@@ -121,7 +121,7 @@ links :: String -> Maybe String -> Maybe String -> Maybe String -> Html
 links _ u p c = box $ catMaybes
     [fmap urlLink u, fmap pdfLink p, fmap codeLink c]
   where box [] = ""
-        box hs = span "pub-links" ((bracks . mconcat . intersperse ", ") hs)
+        box hs = span "pub-links" ((bracks . mconcat . intersperse " ") hs)
 
 paper :: Paper -> Html
 paper p = div "pub-block" $ do
