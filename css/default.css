@@ -1,10 +1,18 @@
 body {
+    background: #000;
+}
+
+#page {
     font-size: 16px;
     line-height: 1.8125em;
     font-family: "Roboto", Arial, serif;
     font-weight: 400;
-    color: #777777;
-    background: rgb(0, 17, 32);
+    color: #fff;
+
+    background: url("/images/background.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -36,8 +44,12 @@ a.navbar-brand {
     padding-top: .5em;
 }
 
+#page-wrapper a {
+    color: #33FFFF;
+}
+
 .bg-white {
-    background: #fff;
+    background: rgba(20,20,20,0.8);
 }
 
 .pub-title {
@@ -46,4 +58,16 @@ a.navbar-brand {
 
 .pub-venue-name {
     font-style: italic;
+}
+
+.outerbox {
+    margin-top: .5em;
+    border-style:solid;
+    border-color:#33FF33;
+    width: 1120px;
+    border-width: 1px;
+}
+
+.padding {
+    margin-top: 20px;
 }

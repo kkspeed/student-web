@@ -14,7 +14,8 @@ since:      2013 Fall
 index:      yes
 ---
 
-<div class="container">
+<div class="container outerbox">
+  <div class="padding"></div>
   <div class="col-md-3">
     <img src="/images/avatar.jpg" width="260px" height="195px"/>
   </div>
@@ -22,13 +23,13 @@ index:      yes
     <div class="col-md-12">
       <h4>Muyuan Li</h4>
       <p>$position$ since $since$ @ $univ$</p>
-      <p>I'm currently with $group$ Group
+      <p>I'm with $group$ Group
         (<a href="$group-link$">link</a>), supervised by $supervisor$
         (<a href="$supervisor-link$">link</a>)</p>
     </div>
     <div class="col-md-9">
       <p>Office: $office$</p>
-      <p>Email: <img src="/images/myemail.gif"/> </p>
+      <p>Email: <img src="/images/myemail-light.png"/> </p>
     </div>
     <div class="col-md-2">
       <a href="http://www.nerdtests.com/ft_nq.php">
@@ -45,24 +46,24 @@ index:      yes
   </div>
 </div>
 
-<div class="container">
+<div class="container outerbox">
   <h3>Research Overview</h3>
   <div class="col-md-12">
     $research-overview$
   </div>
 </div>
 
-<div class="container">
+<div class="container outerbox">
   $partial("templates/publications.html")$
 </div>
 
-<div class="container">
+<div class="container outerbox">
   <h3>Teaching</h3>
 
   $teaching$
 </div>
 
-<div class="container">
+<div class="container outerbox">
   <h3>Me on the Web</h3>
 
   $me$
