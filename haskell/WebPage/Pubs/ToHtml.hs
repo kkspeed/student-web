@@ -114,9 +114,12 @@ codeLink = span "pub-code-link" . (E.a (button "btn btn-primary btn-xs" "Code") 
 pdfLink :: String -> Html
 pdfLink = span "pub-pdf-link" . (E.a (button "btn btn-info btn-xs" "PDF") !) . A.href . toValue
 
+urlLink :: String -> Html
+urlLink = span "pub-pdf-link" . (E.a (button "btn btn-success btn-xs" "View") !) . A.href . toValue
+
 links :: String -> Maybe String -> Maybe String -> Maybe String -> Html
-links _ _ p c = box $ catMaybes
-    [fmap pdfLink p, fmap codeLink c]
+links _ u p c = box $ catMaybes
+    [fmap urlLink u, fmap pdfLink p, fmap codeLink c]
   where box [] = ""
         box hs = span "pub-links" ((bracks . mconcat . intersperse ", ") hs)
 
@@ -124,7 +127,7 @@ paper :: Paper -> Html
 paper p = div "pub-block" $ do
     E.a ! A.id (toValue key) $ ""
     div "pub-title"   $ toMarkup (_title p) >> " " >>
-        links key (_abstract p) (_pdfLink p) (_codeLink p)
+        links key (_url p) (_pdfLink p) (_codeLink p)
     div "pub-authors" $ authors (_authors p)
     div "pub-details" $ details p
     maybe "" note (_note p)

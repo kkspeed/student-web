@@ -9,7 +9,7 @@ type URL   = String
 type Year  = Int
 
 data Kind = Journal | Chapter | Conference | Workshop | Thesis
-          | Report | Consortium | DraftPaper | Poster
+          | Report | Consortium | DraftPaper | Poster | Other
   deriving (Eq,Enum,Show)
 
 data Status = Appeared | Accepted | Submitted | Draft
@@ -57,6 +57,7 @@ conference = appeared Conference
 workshop   = appeared Workshop
 thesis     = appeared Thesis
 poster     = appeared Poster
+other      = appeared Other
 
 isStatus :: Status -> Paper -> Bool
 isStatus s p = s == _status p

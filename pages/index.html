@@ -15,7 +15,7 @@ since:      2013 Fall
 
 <div class="container">
   <div class="col-md-3">
-    <img src="/images/avatar.jpg" width="200px" height="155px"/>
+    <img src="/images/avatar.jpg" width="210px" height="155px"/>
   </div>
   <div class="col-md-8">
     <div class="container">
@@ -59,6 +59,13 @@ since:      2013 Fall
   <h4 class="pub-head">Conference Papers</h4>
   <ol class="pub-list">
     $for(conferences)$
+    <li class="pub-item">$body$</li>
+    $endfor$
+  </ol>
+
+  <h4 class="pub-head">Others</h4>
+  <ol class="pub-list">
+    $for(others)$
     <li class="pub-item">$body$</li>
     $endfor$
   </ol>

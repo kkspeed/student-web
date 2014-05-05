@@ -77,6 +77,7 @@ getPubContext = do
           <> pubListField "chapters" (ofKind Chapter pubs)
           <> pubListField "theses"   (ofKind Thesis pubs)
           <> pubListField "conferences" (ofKinds [Conference,Workshop, Poster] pubs)
+          <> pubListField "others" (ofKind Other pubs)
   return $ foldr (<>) pubListContext (map pubFields pubs)
 
 baseContext :: Context String

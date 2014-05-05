@@ -20,6 +20,11 @@ mianxiong   = Author "Mianxiong" "Dong"
 kaoru       = Author "Kaoru" "Ota"
 yaoliu      = Author "Yao" "Liu"
 zhenfu      = Author "Zhenfu" "Cao"
+yujintu     = Author "Yujin" "Tu"
+chaozhang   = Author "Chao" "Zhang"
+binsheng    = Author "Bingsheng" "Zhang"
+zhanqin     = Author "Zhan" "Qin"
+junfei      = Author "Junfei" "Wang"
 
 -- ** Institutions
 sjtu = "Shanghai Jiao Tong University"
@@ -32,6 +37,7 @@ tetc   = short "TETC" "IEEE Trans, on Emerging Topics in Computing"
 globecom = short "Globecom" "IEEE Globe Communications Conference"
 infocom  = short "Infocom"  "IEEE International Conference on Computer Communications"
 ccs      = short "CCS"      "ACM Conference on Computer and Communications Security"
+mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and Networking"
 
 -- ** Workshops
 
@@ -43,7 +49,7 @@ ccs      = short "CCS"      "ACM Conference on Computer and Communications Secur
 
 -- ** Lists of papers in chronological order.
 
-y13 = [infocom13, tetc13]
+y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
 allPubs = concat [y13,y12]
@@ -62,6 +68,13 @@ infocom13   = conference "zhaoyu2012-infocom"
               2013
               @@ infocom
 
+mobicomApp13 = other "sichen2013-mobicom"
+               [sichen, muyuanli, yujintu, chaozhang, binsheng, zhanqin, junfei, kuiren ]
+               "AcousAuth: A smartphone empowered personal authentication system exploiting keyless acoustic communication"
+               2013
+               `atURL` "http://vimeo.com/77708077"
+               `withNote` "App Competition Finalist (Top 10)"
+               @@ mobicom
 -- ** 2012
 ccs12poster = poster "pp22-gao"
               [zhaoyu, haojin, yaoliu, muyuanli, zhenfu]
