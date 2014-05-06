@@ -48,20 +48,28 @@ mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and N
 
 -- ** Lists of papers in chronological order.
 
-y14 = [priwhishper]
+y14 = [infoPoster, priwhishper]
 y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
 allPubs = concat [y14, y13,y12]
 myself = muyuanli
 
--- ** 2013
+-- ** 2014
+infoPoster   = poster "muyuan-2014-infoposter"
+              [muyuanli, sichen, kuiren]
+              "POSTER: Enabling Private and Non-Intrusive Smartphone Calls with LipTalk"
+              2014
+              `withNote` "Student Poster"
+              @@ infocom
+
 priwhishper  = journal "binsheng-2014-priwhishper"
               [binsheng, zhanqin, sichen, muyuanli, kuiren, congwang, dima]
               "PriWhisper: Enabling Keyless Secure Acoustic Communication for Smartphones"
               2014
               @@ iot
 
+-- ** 2013
 tetc13      = journal "haojin2013-tetc"
               [haojin, suguo, muyuanli, zhaoyu]
               "Fairness-Aware and Privacy-Preserving Friend Matching Protocol in Mobile Social Networks"
