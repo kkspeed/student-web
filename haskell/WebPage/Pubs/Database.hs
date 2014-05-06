@@ -42,10 +42,6 @@ infocom  = short "Infocom"  "IEEE International Conference on Computer Communica
 ccs      = short "CCS"      "ACM Conference on Computer and Communications Security"
 mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and Networking"
 
--- ** Workshops
-
-
-
 --
 -- * Papers
 --
@@ -57,6 +53,7 @@ y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
 allPubs = concat [y14, y13,y12]
+myself = muyuanli
 
 -- ** 2013
 priwhishper  = journal "binsheng-2014-priwhishper"

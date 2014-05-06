@@ -17,7 +17,7 @@ import qualified Text.Blaze.Html5.Attributes as A
 import Text.Blaze.Html.Renderer.String (renderHtml)
 
 import WebPage.Pubs.Paper hiding (paper,venue)
-
+import WebPage.Pubs.Database (myself)
 
 -- * Exported functions
 
@@ -66,7 +66,8 @@ asList [a,b,c] = comma a >> comma b >> "and " >> c
 asList (a:as)  = comma a >> asList as
 
 author :: Author -> Html
-author (Author f l) = toMarkup (f ++ " " ++ l)
+author a@(Author f l) = annotate $ toMarkup (f ++ " " ++ l)
+    where annotate = if a == myself then span "me" else id
 
 authors :: [Author] -> Html
 authors = asList . map author

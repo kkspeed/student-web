@@ -28,7 +28,7 @@ compileCss :: Rules ()
 compileCss =
     match "css/*" $ do
       route idRoute
-      compile copyFileCompiler
+      compile compressCssCompiler
 
 compileImage :: Rules ()
 compileImage =
