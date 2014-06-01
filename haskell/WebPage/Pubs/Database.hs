@@ -27,6 +27,8 @@ zhanqin     = Author "Zhan" "Qin"
 junfei      = Author "Junfei" "Wang"
 congwang    = Author "Cong" "Wang"
 dima        = Author "Di" "Ma"
+leyu        = Author "Le" "Yu"
+shangqian   = Author "Shangqian" "Hu"
 
 -- ** Institutions
 sjtu = "Shanghai Jiao Tong University"
@@ -37,6 +39,7 @@ tetc   = short "TETC" "IEEE Trans, on Emerging Topics in Computing"
 iot    = short "IOT"  "Internet of Things Journal, IEEE"
 
 -- ** Conferences
+mobihoc  = short "MobiHoc"  "ACM International Symposium on Mobile Ad Hoc Networking and Computing"
 globecom = short "Globecom" "IEEE Globe Communications Conference"
 infocom  = short "Infocom"  "IEEE International Conference on Computer Communications"
 ccs      = short "CCS"      "ACM Conference on Computer and Communications Security"
@@ -48,7 +51,7 @@ mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and N
 
 -- ** Lists of papers in chronological order.
 
-y14 = [infoPoster, priwhishper]
+y14 = [mobihoc2014, infoPoster, priwhishper]
 y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
@@ -56,6 +59,12 @@ allPubs = concat [y14, y13,y12]
 myself = muyuanli
 
 -- ** 2014
+mobihoc2014 = conference "muyuan-2014-mobihoc"
+              [muyuanli, haojin, zhaoyu, sichen, leyu, shangqian, kuiren]
+              "All Your Location are Belong to Us: Breaking Mobile Social Networks for Automated User Location Tracking"
+              2014
+              @@ mobihoc
+
 infoPoster   = poster "muyuan-2014-infoposter"
               [muyuanli, sichen, kuiren]
               "POSTER: Enabling Private and Non-Intrusive Smartphone Calls with LipTalk"
