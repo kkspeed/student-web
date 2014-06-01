@@ -4,8 +4,8 @@ student-web
 My student web page, largely inspired by Eric Walkingshaw's Hakyll-based
 [web page](http://web.engr.oregonstate.edu/~walkiner/)
 
-* License
-
+License
+===========
 © Bruce Li, all rights reserved.
 
 All *non-content* resources used to generate this web page are placed in the
