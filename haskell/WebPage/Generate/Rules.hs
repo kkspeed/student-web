@@ -15,6 +15,7 @@ compileRules = do
   buildPages
   copyPapers
   loadAbstracts
+  copyCV
 
 compileTemplates :: Rules ()
 compileTemplates =
@@ -53,6 +54,12 @@ compilePage apply = compile $ do
 copyPapers :: Rules ()
 copyPapers =
   match "papers/*.pdf" $ do
+    route   idRoute
+    compile copyFileCompiler
+
+copyCV :: Rules ()
+copyCV =
+  match "cv/*.pdf" $ do
     route   idRoute
     compile copyFileCompiler
 
