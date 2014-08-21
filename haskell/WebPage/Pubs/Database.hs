@@ -63,6 +63,7 @@ mobihoc2014 = conference "muyuan-2014-mobihoc"
               [muyuanli, haojin, zhaoyu, sichen, leyu, shangqian, kuiren]
               "All Your Location are Belong to Us: Breaking Mobile Social Networks for Automated User Location Tracking"
               2014
+              `atURL` "http://dl.acm.org/citation.cfm?id=2632953"
               @@ mobihoc
 
 infoPoster   = poster "muyuan-2014-infoposter"
