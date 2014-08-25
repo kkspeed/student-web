@@ -16,6 +16,7 @@ compileRules = do
   copyPapers
   loadAbstracts
   copyCV
+  copyPresentations
 
 compileTemplates :: Rules ()
 compileTemplates =
@@ -67,3 +68,15 @@ loadAbstracts :: Rules ()
 loadAbstracts =
   match "papers/*.abstract.md" $
     compile pandocCompiler
+
+static :: Pattern -> Rules ()
+static f = match f $ do
+             route idRoute
+             compile copyFileCompiler
+
+directory :: (Pattern -> Rules a) -> String -> Rules a
+directory act f = act $ fromGlob $ f ++ "/**"
+
+copyPresentations :: Rules ()
+copyPresentations =
+    mapM_ (directory static) ["presentations"]
