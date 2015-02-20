@@ -46,7 +46,7 @@ a.navbar-brand {
 }
 
 #page-wrapper a {
-    color: #33FFFF;
+    color: #47A3FF;
 }
 
 .bg-white {
@@ -64,7 +64,7 @@ a.navbar-brand {
 .outerbox {
     margin-top: .5em;
     border-style:solid;
-    border-color:#33FF33;
+    border-color:#00FFFF;
     width: 100%;
     border-width: 1px;
 }
@@ -74,5 +74,32 @@ a.navbar-brand {
 }
 
 .me {
-    color: yellow;
+    color: #00FF00;
+}
+
+#personal-contact-box hr {
+    border-color: #00FFFF;
+    background:   #00FFFF;
+    height:       2px;
+    border-style: solid;
+}
+
+#avatar-picture {
+    margin-left: -17px;
+    width:       296px;
+    height:      222px;
+}
+
+#my-qr-code {
+    width: 230px;
+}
+
+.btn-info {
+    background-color: #8A5CE6;
+    border-color:     #A375FF;
+}
+
+.btn-success {
+    background-color: #5BC0DC;
+    border-color:     #46B8DA;
 }
