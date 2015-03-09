@@ -9,8 +9,12 @@ No news is good news. Stay tuned!
 - Week 02 (02/09/2015) [Binary Conversion and MIPS Assembly](https://www.dropbox.com/s/m6zn486l253ysbi/slides.pdf?dl=0)
 - Week 03 (02/16/2015) [Quiz 1, MIPS Assembly](https://www.dropbox.com/s/2wr7fwmglvyrosy/slides.pdf?dl=0)
 - Week 04 (02/23/2015) [Overflow, Underflow, Naive Multiplication](https://www.dropbox.com/s/sl8eb50i5z59bk3/Recitation.pdf?dl=0)
-- Week 05 (03/02/2015) [Booth's Alogirthm](https://www.dropbox.com/s/ygd286bcmyikmdg/week_05.pdf?dl=0)
-- Week 06 (03/09/2015) To be continued...
+- Week 05 (03/02/2015)
+    [Booth's Alogirthm](https://www.dropbox.com/s/ygd286bcmyikmdg/week_05.pdf?dl=0),
+    [Instruction Set Comparison](https://www.dropbox.com/s/c4nqwv3cn0zkjdn/slides.pdf?dl=0),
+    [Spim Guide](https://www.dropbox.com/s/p6dr3nu0hd5miy2/spim.pdf?dl=0),
+    [ARM Addressing Modes](ftp://www.cs.uregina.ca/pub/class/301/ARM-addressing/lecture.html)
+- Week 06 (03/09/2015) [Finite State Machine](https://www.dropbox.com/s/ssnk0klkit8ny48/week06.pdf?dl=0)
 - Week 07 (03/16/2015) To be continued...
 - Week 08 (03/23/2015) To be continued...
 - Week 09 (03/30/2015) To be continued...

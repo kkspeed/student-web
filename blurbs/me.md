@@ -15,4 +15,4 @@ die-hard Linux user.
 *  [Blog][Blog]
 
 [Github]: https://github.com/kkspeed
-[Blog]: http://mybruceli.wordpress.com
+[Blog]: http://coldcodes.info
