@@ -16,7 +16,11 @@ No news is good news. Stay tuned!
     [ARM Addressing Modes](ftp://www.cs.uregina.ca/pub/class/301/ARM-addressing/lecture.html)
 - Week 06 (03/09/2015) [Finite State Machine](https://www.dropbox.com/s/ssnk0klkit8ny48/week06.pdf?dl=0)
 - Week 07 (03/16/2015) Enjoy your spring break
-- Week 08 (03/23/2015) [Verilog Introduction](https://cseweb.ucsd.edu/classes/sp09/cse141L/Slides/01-Verilog1.pdf)
+- Week 08 (03/23/2015)
+    [Verilog Introduction](https://cseweb.ucsd.edu/classes/sp09/cse141L/Slides/01-Verilog1.pdf)
+    [Midterm Review](https://www.dropbox.com/s/d0ha0r436buv2b8/review.pdf?dl=0)
+    [Quiz 2 Solution](https://www.dropbox.com/s/ro132t2yfaqaqzq/QZ2-sol.pdf?dl=0)
+    [Single Cycle Datapath](http://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec08.pdf)
 - Week 09 (03/30/2015) To be continued...
 - Week 10 (04/06/2015) To be continued...
 - Week 11 (04/13/2015) To be continued...
