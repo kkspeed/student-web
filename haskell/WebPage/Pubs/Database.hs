@@ -29,6 +29,7 @@ congwang    = Author "Cong" "Wang"
 dima        = Author "Di" "Ma"
 leyu        = Author "Le" "Yu"
 shangqian   = Author "Shangqian" "Hu"
+chunmingqiao = Author "Chunming" "Qiao"
 
 -- ** Institutions
 sjtu = "Shanghai Jiao Tong University"
@@ -44,20 +45,27 @@ globecom = short "Globecom" "IEEE Globe Communications Conference"
 infocom  = short "Infocom"  "IEEE International Conference on Computer Communications"
 ccs      = short "CCS"      "ACM Conference on Computer and Communications Security"
 mobicom  = short "MobiCom"  "Internantional Conference on Mobile Computing and Networking"
+icdcs    = short "ICDCS"    "IEEE International Conference on Distributed Computing Systems"
 
 --
 -- * Papers
 --
 
 -- ** Lists of papers in chronological order.
-
+y15 = [icdcs2015]
 y14 = [mobihoc2014, infoPoster, priwhishper]
 y13 = [infocom13, tetc13, mobicomApp13]
 y12 = [globecom12, ccs12poster]
 
-allPubs = concat [y14, y13,y12]
+allPubs = concat [y15, y14, y13,y12]
 myself = muyuanli
 
+-- ** 2015
+icdcs2015   = conference "sichen-2015-icdcs"
+              [sichen, muyuanli, kuiren, chunmingqiao]
+              "CrowdMap: Accurate Reconstruction of Indoor Floor Plan from Crowdsourced Sensor-Rich Videos"
+              2015
+              @@ icdcs
 -- ** 2014
 mobihoc2014 = conference "muyuan-2014-mobihoc"
               [muyuanli, haojin, zhaoyu, sichen, leyu, shangqian, kuiren]
