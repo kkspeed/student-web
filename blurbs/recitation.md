@@ -22,5 +22,8 @@ No news is good news. Stay tuned!
     [Quiz 2 Solution](https://www.dropbox.com/s/ro132t2yfaqaqzq/QZ2-sol.pdf?dl=0)
     [Single Cycle Datapath](http://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec08.pdf)
 - Week 09 (03/30/2015) [Datapath for Jump Instr](https://www.dropbox.com/s/87ytvhm21424xh1/slides.pdf?dl=0)
-- Week 10 (04/06/2015) To be continued...
+- Week 10 (04/06/2015) [Delayed Branch](https://www.dropbox.com/s/b9frftg1fs1gdaj/slides.pdf?dl=0)
 - Week 11 (04/13/2015) To be continued...
+- Week 12 (04/20/2015)
+    [Midterm 2 Sol](https://www.dropbox.com/s/l60qfqcsz2xz4i7/MT2-Solution-Key.pdf?dl=0),
+    [Cache 101](https://www.dropbox.com/home/courses/CSE341/Week_11?preview=slides.pdf)
